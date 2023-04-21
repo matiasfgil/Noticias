@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(img/64435734-B474-4062-A686-CE21C09CCFC3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+
+
+
+nav ul li {
+    list-style: none;
+    margin-left: 200px;
+
+}
+
+h1 {
+    font-family: sans-serif;
+    color: rgb(27, 27, 27);
+    margin: 10px;
+}
+
+.registro {
+    font-family: 'Racing Sans One', cursiva;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.formulario {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.692);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 9px 3px #000;
+}
+.mb-2{
+    font-family: 'Racing Sans One', cursiva;
+    color: #fff;
+    font-size: 26px;
+}
+.tit{
+    border-radius: 5px;
+    width: 310px;
+}
+.tit2{
+    border-radius: 5px;
+    width: 310px;
+}
+
+
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: rgba(0, 0, 0, 0.692);
+    color: #fff;
+}
+.containerFooter a{
+    color: #ffc107;
+}
