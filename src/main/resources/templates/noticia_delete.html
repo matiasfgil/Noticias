@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2? family=Bebas+Neue&family=Open+Sans:wght@400;600&family=Racing+Sans+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
          <link rel="stylesheet" href="/style.css">
@@ -15,7 +20,7 @@
 <body>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
             <a class="navbar-brand" href="#">NotiPip</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,13 +45,16 @@
             </div>
         </nav>
 
-        <h1>Eliminar noticia</h1>
+        
 
 
         <div class="form-group my-3">
             <form class="formulario" action="/noticia/eliminacion" method="POST">
+                <div>
+                    <h1 class="eliminar">Eliminar noticia</h1>
+                </div>
 
-                <select name="titulo">
+                <select  class="select" name="titulo">
 
                     <option>Seleccionar Noticia</option>
 
@@ -54,7 +62,7 @@
                 </select>
                 <br>
 
-                <button type="submit" class="btn btn-primary mt-3 botones">Eliminar</button>
+                <button type="submit" class="btn btn-warning mt-3 botones">Eliminar</button>
 
             </form>
 
@@ -71,10 +79,15 @@
                 <p class="card-text" th:text="${error}"></p>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        
         <section class=" text-center container">
             <div class="row mt-3">
                 <div class="divVolver">
-                    <a th:href="@{/}" class="btn btn-secondary my-2 botonVolver botones">Volver</a>
+                    <a th:href="@{/}" class="btn btn-warning my-2 botonVolver botones">Volver</a>
                 </div>
             </div>
         </section>

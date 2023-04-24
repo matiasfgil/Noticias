@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(img/64435734-B474-4062-A686-CE21C09CCFC3.jpg);
+    background-image: url(img/R.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -28,6 +28,7 @@ h1 {
     margin: 10px;
 }
 
+
 .registro {
     font-family: 'Racing Sans One', cursiva;
     color: #fff;
@@ -42,7 +43,7 @@ h1 {
 .formulario {
     width: 450px;
     margin: auto;
-    background: rgba(0, 0, 0, 0.692);
+    background: rgba(0, 0, 0, 0.356);
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 40px;
@@ -64,6 +65,7 @@ h1 {
 }
 
 
+
 .containerFooter{
     display: flex;
     justify-content: center;
@@ -73,4 +75,54 @@ h1 {
 }
 .containerFooter a{
     color: #ffc107;
+}
+
+thead tr{
+    background: rgba(0, 0, 0, 0.696);
+    box-shadow: 5px 9px 3px #000;
+    color: #fff;
+}
+tbody tr{
+    background: rgba(0, 0, 0, 0.696);
+    box-shadow: 5px 9px 3px #000;
+    color: #fff;
+}
+.eliminar{
+    font-family: 'Racing Sans One', cursiva;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 55px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.select{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.h1{
+    font-family: 'Racing Sans One', cursiva;
+    color: transparent;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 40px;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 2px #646464;
+    line-height: 1em;
+    
+}
+.h1::before{
+    content: attr(data-tex);
+    position: absolute;
+    color: #ffc107;
+    width: 0;
+    overflow: hidden;
+    border-right: 13px solid #ffc107;
+    -webkit-text-stroke: #ffc107;
+    transition: 1s;
+}
+.h1:hover:before{
+    width: 30%;
+    filter: drop-shadow(0 0 10px #ffc107) ;
+
 }
